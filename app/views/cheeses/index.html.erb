@@ -1,0 +1,28 @@
+</br>
+</br>
+</br>
+</br>
+
+<h1>🧀 List of Cheeses 🧀</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name:</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cheeses.each do |cheese| %>
+      <tr>
+        <td><%= cheese.name %></td>
+        <td><%= link_to 'Show', cheese %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cheese', new_cheese_path %>
