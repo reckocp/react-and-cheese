@@ -25,6 +25,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'react-rails', '~> 1.6.0'
 gem 'react-bootstrap-rails'
+gem 'simple_form'
 
 
 # Use ActiveModel has_secure_password

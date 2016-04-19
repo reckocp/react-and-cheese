@@ -5,6 +5,7 @@ class CheesesController < ApplicationController
 
   def show
     @cheese = Cheese.find(params[:id])
+    @users = @cheese.users
   end
 
   def new
@@ -30,6 +31,6 @@ class CheesesController < ApplicationController
     end
 
     def cheese_params
-      params.require(:cheese).permit(:name)
+      params.require(:cheese).permit(:name, user_attributes: [:id, :username])
     end
 end

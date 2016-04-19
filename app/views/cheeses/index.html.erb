@@ -4,7 +4,9 @@
 </br>
 
 <h1>🧀 List of Cheeses 🧀</h1>
-
+<% if logged_in? %>
+<h3>Hello <%= current_user.username %>!</h3>
+<% end %>
 <table>
   <thead>
     <tr>
@@ -24,5 +26,6 @@
 </table>
 
 <br>
-
+<% if logged_in? %>
 <%= link_to 'New Cheese', new_cheese_path %>
+<% end %>

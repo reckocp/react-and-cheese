@@ -7,9 +7,10 @@ var NavBar = React.createClass({
              <a href="/">Home</a>
            </div>
            <ul className="nav navbar-nav navbar pull-right">
-               <li> <a className="btn btn-default" href="/cheeses">All Cheeses</a> </li>
+               <li> <a className="btn btn-default" href="/users">All Users</a> </li>
                <li> <a className="btn btn-default" href="/cheeses/new">Add Cheese</a> </li>
-               <li> <a className="btn btn-danger" rel="nofollow" data-method="DELETE" href="/sign_out">Sign Out</a> </li>
+               <li> <a className="btn btn-default" href="/favorites">Choose Your Favorite Cheeses</a> </li>
+               <li> <a className="btn btn-danger" rel="nofollow" data-method="DELETE" href="/logout">Sign Out</a> </li>
            </ul>
          </div>
      </nav>
@@ -26,7 +27,7 @@ var LoggedOutNavBar = React.createClass({
              <a href="/">Home</a>
            </div>
            <ul className="nav navbar-nav navbar pull-right">
-           <li> <a className="btn btn-default navbar-btn" href="/sign_in">Sign In</a> </li>
+           <li> <a className="btn btn-default navbar-btn" href="/login">Sign In</a> </li>
            <li> <a className="btn btn-default navbar-btn" href="/users/new">New User</a> </li>
            </ul>
          </div>

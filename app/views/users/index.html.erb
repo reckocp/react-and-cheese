@@ -4,8 +4,9 @@
 </br>
 
 <h1>👦 List of Users  👧</h1>
-
-
+<% if logged_in? %>
+<h3>Hello <%= current_user.username %>!</h3>
+<% end %>
 <table>
   <thead>
     <tr>
