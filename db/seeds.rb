@@ -1,7 +1,32 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+User.create!(username: 'Usha', password: "password")
+User.create!(username: 'Ajay', password: "password")
+User.create!(username: 'Zach', password: "password")
+User.create!(username: 'Sam', password: "password")
+User.create!(username: 'Lily', password: "password")
+User.create!(username: 'Cameron', password: "password")
+User.create!(username: 'Zeeshan', password: "password")
+User.create!(username: 'Shilpa', password: "password")
+User.create!(username: 'Zareen', password: "password")
+User.create!(username: 'Robert', password: "password")
+
+
+Cheese.create!(name: 'Mozzarella')
+Cheese.create!(name: 'Parmigiano-Reggiano')
+Cheese.create!(name: 'Sharp Cheddar')
+Cheese.create!(name: 'Gruyere Cheese')
+Cheese.create!(name: 'Brie')
+Cheese.create!(name: 'Feta')
+Cheese.create!(name: 'Swiss Cheese')
+Cheese.create!(name: 'Gouda Cheese')
+Cheese.create!(name: 'Provolone Cheese')
+Cheese.create!(name: 'Monterey Jack')
+Cheese.create!(name: 'Muenster Cheese')
+Cheese.create!(name: 'Camembert')
+Cheese.create!(name: 'Blue Cheese')
+Cheese.create!(name: 'Pecorino Romano')
+Cheese.create!(name: 'Gorgonzola')
+Cheese.create!(name: 'Irish Cheddar')
+Cheese.create!(name: 'English Farmhouse Cheddar')
+Cheese.create!(name: 'Havarti')
+Cheese.create!(name: 'Edam')
+Cheese.create(name: 'Buffalo Mozzarella')
