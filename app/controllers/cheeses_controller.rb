@@ -1,6 +1,6 @@
 class CheesesController < ApplicationController
   def index
-    @cheeses = Cheese.all
+    @cheeses = Cheese.all.sort_by{ |cheese| cheese.fav_count}.reverse!
   end
 
   def show
@@ -31,6 +31,8 @@ class CheesesController < ApplicationController
     end
 
     def cheese_params
-      params.require(:cheese).permit(:name, user_attributes: [:id, :username])
+      params.require(:cheese).permit(:name, user_ids: [])
     end
+
+
 end

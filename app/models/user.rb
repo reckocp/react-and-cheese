@@ -4,4 +4,5 @@ class User < ActiveRecord::Base
   has_many :cheeses, :through => :favorites
   accepts_nested_attributes_for :cheeses
 
+
 end
